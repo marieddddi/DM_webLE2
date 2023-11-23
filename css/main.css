@@ -1,0 +1,547 @@
+/*css pour le header*/
+
+#banniere {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(149, 149, 149) !important;
+  /*permet d'avoir les couleurs en dégradé et !important ppur le "forcer"*/
+}
+
+#image_gauche {
+  display: flex;
+  align-items: center;
+}
+
+#image_gauche img {
+  margin-right: 10px;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#logo img {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#moncompte {
+  display: flex;
+  align-items: center;
+}
+
+#secoco {
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+#accueil {
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-left: 70px;
+}
+
+#secoco .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+#accueil a {
+  text-decoration: none;
+  color: white;
+}
+
+#accueil a:hover {
+  color: black;
+}
+
+#secoco a {
+  text-decoration: none;
+  color: white;
+}
+
+#secoco a:hover {
+  color: black;
+}
+
+html {
+  background-color: rgb(205, 205, 205);
+  overflow-x: hidden !important;
+}
+
+/*css pour la page d'accueil*/
+
+
+.color {
+  width: 200px;
+  height: 200px;
+  margin-right: 80px;
+  clip-path: path(
+    "M24 14.0001C43.2859 28.8449 54.6886 33.2598 75.5 38.0001C108.423 36.7792 124.324 29.1481 147.5 1.50009C163.164 0.412347 175.5 14 180.144 32C184.788 50 162.173 57.3011 167.644 71C179.992 86.959 177.522 91.1801 175.5 112.5C166.873 145.566 95.5 178.5 85.5 169.5C75.5 160.5 85.0606 139.768 69.5 127.5C49.1936 136.915 37.8827 144.345 16.5 122.5C-6.15329 104.435 -2.54096 95.6452 16.5 81.0001C19.1623 58.4442 16.445 46.225 0.999972 25.5001C-0.849747 6.54974 5.4354 5.69851 24 14.0001Z"
+  );
+}
+
+#liste {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#palete {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.color {
+  width: 200px;
+  height: 200px;
+  margin-right: 80px;
+  clip-path: path(
+    "M24 14.0001C43.2859 28.8449 54.6886 33.2598 75.5 38.0001C108.423 36.7792 124.324 29.1481 147.5 1.50009C163.164 0.412347 175.5 14 180.144 32C184.788 50 162.173 57.3011 167.644 71C179.992 86.959 177.522 91.1801 175.5 112.5C166.873 145.566 95.5 178.5 85.5 169.5C75.5 160.5 85.0606 139.768 69.5 127.5C49.1936 136.915 37.8827 144.345 16.5 122.5C-6.15329 104.435 -2.54096 95.6452 16.5 81.0001C19.1623 58.4442 16.445 46.225 0.999972 25.5001C-0.849747 6.54974 5.4354 5.69851 24 14.0001Z"
+  );
+}
+#liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#palete {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* Style pour le conteneur des tableaux */
+.table-container {
+  margin: 20px; /* Espacement entre les tableaux */
+  max-width: 100px;
+}
+
+/* Style pour les tableaux */
+.smiley-table {
+  border-collapse: collapse;
+  display: inline-block; /* Permet aux tableaux de se coller */
+}
+
+/* Style pour les cellules du tableau */
+.smiley-table td {
+  padding: 0;
+  border: 0.5px solid black;
+}
+
+/* Style pour les pixels */
+.pixel {
+  width: 30px; /* Largeur du pixel */
+  height: 30px; /* Hauteur du pixel */
+  display: block;
+}
+
+#compte_ensemble {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#smileys {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#choix_couleurs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-top: 80px;
+}
+
+/* Styles pour les boutons personnalisés */
+.custom-button {
+  left: 1700px;
+  position: relative;
+  border: none; /* Pas de bordure */
+  text-decoration: underline; /* Souligné */
+  background: none; /* Fond transparent */
+  cursor: pointer; /* Curseur au survol */
+  padding: 5px 10px; /* Espacement du contenu à l'intérieur du bouton */
+}
+
+.lessmiley {
+  display: flex;
+}
+
+
+/* css pour moncompte */
+
+
+.color {
+  width: 200px;
+  height: 200px;
+  margin-right: 80px;
+  clip-path: path(
+    "M24 14.0001C43.2859 28.8449 54.6886 33.2598 75.5 38.0001C108.423 36.7792 124.324 29.1481 147.5 1.50009C163.164 0.412347 175.5 14 180.144 32C184.788 50 162.173 57.3011 167.644 71C179.992 86.959 177.522 91.1801 175.5 112.5C166.873 145.566 95.5 178.5 85.5 169.5C75.5 160.5 85.0606 139.768 69.5 127.5C49.1936 136.915 37.8827 144.345 16.5 122.5C-6.15329 104.435 -2.54096 95.6452 16.5 81.0001C19.1623 58.4442 16.445 46.225 0.999972 25.5001C-0.849747 6.54974 5.4354 5.69851 24 14.0001Z"
+  );
+}
+#liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#palete {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* Style pour le conteneur des tableaux */
+.table-container {
+  margin: 20px; /* Espacement entre les tableaux */
+  max-width: 100px;
+}
+
+/* Style pour les tableaux */
+.smiley-table {
+  border-collapse: collapse;
+  display: inline-block; /* Permet aux tableaux de se coller */
+}
+
+/* Style pour les cellules du tableau */
+.smiley-table td {
+  padding: 0;
+  border: 0.5px solid black;
+}
+
+/* Style pour les pixels */
+.pixel {
+  width: 30px; /* Largeur du pixel */
+  height: 30px; /* Hauteur du pixel */
+  display: block;
+}
+
+#compte_ensemble {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#smileys {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#choix_couleurs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-top: 80px;
+}
+
+.coulcoul {
+  width: 50px; /* Largeur des couleurs */
+  height: 50px; /* Hauteur des couleurs */
+  margin-bottom: 10px; /* Espacement en bas de chaque couleur */
+  border: 1px solid #000; /* Bordure pour chaque couleur */
+  cursor: pointer; /* Curseur de la souris */
+  margin-right: 10px;
+}
+
+.custom-button {
+  left: 1700px;
+  position: relative;
+  border: none; /* Pas de bordure */
+  text-decoration: underline; /* Souligné */
+  background: none; /* Fond transparent */
+  cursor: pointer; /* Curseur au survol */
+  padding: 5px 10px; /* Espacement du contenu à l'intérieur du bouton */
+}
+
+.nw-button{
+  position: relative;
+  border: none; /* Pas de bordure */
+  text-decoration: underline; /* Souligné */
+  background: none; /* Fond transparent */
+  cursor: pointer; /* Curseur au survol */
+  padding: 5px 10px; /* Espacement du contenu à l'intérieur du bouton */
+}
+
+
+/* css pour creer_compte*/
+
+#mess {
+  font-size: 50px !important;
+  width: 200px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+#indication {
+  font-size: 20px;
+  width: 800px;
+  margin-left: 30px;
+}
+.rouge {
+  color: red;
+}
+#login {
+  width: 280px;
+  padding: 10px;
+  height: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#nomp {
+  width: 100px;
+  padding: 10px;
+  height: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#coord {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.log {
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+#coco {
+  display: block;
+  margin-top: 30px;
+}
+
+#compte {
+  margin-left: 50px;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #000;
+  background: #585454;
+  background: rgb(173, 178, 175);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#dejacompte {
+  margin-left: 30px;
+  margin-top: 32px;
+  font-size: 13px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+#bouton {
+  display: flex;
+}
+
+#image img {
+  margin-bottom: 200px !important;
+  float: right;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#formLogin {
+  margin-top: 100px;
+}
+
+#message {
+  margin-left: 40px;
+  margin-top: 40px;
+  font-size: 15px;
+  color: crimson;
+}
+
+
+/* css pour login*/
+
+
+#mess {
+  font-size: 50px !important;
+  width: 200px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+#indication {
+  font-size: 20px;
+  width: 800px;
+  margin-left: 30px;
+}
+.rouge {
+  color: red;
+}
+#login {
+  width: 300px;
+  padding: 10px;
+  height: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.log {
+  width: 200px;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+#coco {
+  display: block;
+  margin-top: 30px;
+}
+
+#compte {
+  margin-left: 50px;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #000;
+  background: #585454;
+  background: rgb(173, 178, 175);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#pascompte {
+  margin-left: 50px;
+  margin-top: 32px;
+  font-size: 13px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+#bouton {
+  display: flex;
+}
+
+#image img {
+  margin-bottom: 200px !important;
+  float: right;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#formLogin {
+  margin-top: 100px;
+}
+
+#message {
+  margin-left: 40px;
+  margin-top: 40px;
+  font-size: 15px;
+  color: crimson;
+}
+
+
+/* css pour le footer*/
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+#pied {
+  position: relative;
+  background-color: rgb(151, 151, 163);
+  height: 200px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#arc-de-cercle {
+  position: absolute;
+  bottom: 100px;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 500px;
+  border-radius: 90%;
+  background-color: rgb(205, 205, 205);
+}
+
+#pied a {
+  position: relative;
+  display: block;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 8%;
+}
+
+/* Styles pour la fenêtre pop-up */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.popup {
+  text-align: left;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 60%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.popup-overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
