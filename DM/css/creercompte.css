@@ -1,0 +1,98 @@
+#mess {
+  font-size: 50px !important;
+  width: 200px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+#indication {
+  font-size: 20px;
+  width: 800px;
+  margin-left: 30px;
+}
+.rouge {
+  color: red;
+}
+#login {
+  width: 280px;
+  padding: 10px;
+  height: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#nomp {
+  width: 100px;
+  padding: 10px;
+  height: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#coord {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.log {
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+#coco {
+  display: block;
+  margin-top: 30px;
+}
+
+#compte {
+  margin-left: 50px;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #000;
+  background: #585454;
+  background: rgb(173, 178, 175);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#dejacompte {
+  margin-left: 30px;
+  margin-top: 32px;
+  font-size: 13px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+#bouton {
+  display: flex;
+}
+
+#image img {
+  margin-bottom: 200px !important;
+  float: right;
+  width: 600px;
+  margin-right: 20px;
+}
+
+#formLogin {
+  margin-top: 100px;
+}
+
+#message {
+  margin-left: 40px;
+  margin-top: 40px;
+  font-size: 15px;
+  color: crimson;
+}

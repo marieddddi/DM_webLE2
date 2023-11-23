@@ -1,0 +1,85 @@
+.color {
+  width: 200px;
+  height: 200px;
+  margin-right: 80px;
+  clip-path: path(
+    "M24 14.0001C43.2859 28.8449 54.6886 33.2598 75.5 38.0001C108.423 36.7792 124.324 29.1481 147.5 1.50009C163.164 0.412347 175.5 14 180.144 32C184.788 50 162.173 57.3011 167.644 71C179.992 86.959 177.522 91.1801 175.5 112.5C166.873 145.566 95.5 178.5 85.5 169.5C75.5 160.5 85.0606 139.768 69.5 127.5C49.1936 136.915 37.8827 144.345 16.5 122.5C-6.15329 104.435 -2.54096 95.6452 16.5 81.0001C19.1623 58.4442 16.445 46.225 0.999972 25.5001C-0.849747 6.54974 5.4354 5.69851 24 14.0001Z"
+  );
+}
+#liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#palete {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* Style pour le conteneur des tableaux */
+.table-container {
+  margin: 20px; /* Espacement entre les tableaux */
+  max-width: 100px;
+}
+
+/* Style pour les tableaux */
+.smiley-table {
+  border-collapse: collapse;
+  display: inline-block; /* Permet aux tableaux de se coller */
+}
+
+/* Style pour les cellules du tableau */
+.smiley-table td {
+  padding: 0;
+  border: 0.5px solid black;
+}
+
+/* Style pour les pixels */
+.pixel {
+  width: 30px; /* Largeur du pixel */
+  height: 30px; /* Hauteur du pixel */
+  display: block;
+}
+
+#compte_ensemble {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#smileys {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#choix_couleurs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-top: 80px;
+}
+
+.coulcoul {
+  width: 50px; /* Largeur des couleurs */
+  height: 50px; /* Hauteur des couleurs */
+  margin-bottom: 10px; /* Espacement en bas de chaque couleur */
+  border: 1px solid #000; /* Bordure pour chaque couleur */
+  cursor: pointer; /* Curseur de la souris */
+  margin-right: 10px;
+}
+
+/* Styles pour les boutons personnalisés */
+.custom-button {
+  left: 1700px;
+  position: relative;
+  border: none; /* Pas de bordure */
+  text-decoration: underline; /* Souligné */
+  background: none; /* Fond transparent */
+  cursor: pointer; /* Curseur au survol */
+  padding: 5px 10px; /* Espacement du contenu à l'intérieur du bouton */
+}
