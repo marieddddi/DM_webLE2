@@ -10,25 +10,20 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 ?>
 
 
-<!DOCTYPE html>
-<html lang="fr">
 
 <!-- **** H E A D **** -->
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Les recettes du chef</title>
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-
-<!-- **** F I N **** H E A D **** -->
+	<title>Editeur de smiley</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 
+	<script src="js/main.js"></script>
+	<script src="js/jquery-3.7.1.js"></script>
 
-<!-- **** B O D Y **** -->
 
-<body>
+
 
 	<div id="banniere">
 		<div id="image_gauche">
@@ -63,8 +58,6 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 		</div>
 	</div>
 
-</body>
+</>
+</head>
 
-<!-- **** F I N **** B O D Y **** -->
-
-</html>

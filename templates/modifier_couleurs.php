@@ -32,6 +32,22 @@ if (isset($_GET["colors"])) {
 
 }
 
+if (isset($_GET["chaine"])) {
+    // Récupération des couleurs envoyées depuis la requête AJAX
+    // Récupération des couleurs envoyées depuis la requête AJAX
+    $chaine = $_GET["chaine"];
+    echo "Colors received: " . $chaine;
+
+    // Récupération de l'ID de l'utilisateur depuis la session
+    $idUser = $_SESSION['idUser'];
+    echo "User ID: " . $idUser;
+
+    // Appel à une fonction pour mettre à jour les couleurs en base de données
+    enregistrer_smiley($idUser, $chaine);
+
+
+}
+
 
 
 ?>

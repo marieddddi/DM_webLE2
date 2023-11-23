@@ -1,21 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- **** H E A D **** -->
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Les recettes du chef</title>
-	<link rel="stylesheet" type="text/css" href="css/accueil.css" />
-	<link rel="stylesheet" type="text/css" href="css/footer.css" />
-	<script src="js/footer.js"></script>
-</head>
-<!-- **** F I N **** H E A D **** -->
-
-
-<!-- **** B O D Y **** -->
-
-<body>
+<footer>
 
 	<div id="pied">
 
@@ -77,7 +61,4 @@
 			<input type="button" value="Fermer" onclick="hidePopup();">
 		</div>
 	</div>
-</body>
-<!-- **** F I N **** B O D Y **** -->
-
-</html>
+</footer>
