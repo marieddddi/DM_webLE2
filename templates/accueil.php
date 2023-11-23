@@ -2,8 +2,12 @@
 include_once("libs/modele.php");
 include_once("libs/maLibForms.php");
 
-$nbCases = 10; // Nombre par défaut
-$grille = '';
+$nbCases = 3; // Nombre par défaut
+$grille = '<table id="grille"> <tr> <td style="background-color: rgb(255, 255, 255);"></td> 
+<td style="background-color: rgb(255, 255, 255);"></td> <td style="background-color: rgb(255, 255, 255);"></td> </tr> 
+<tr> <td style="background-color: rgb(255, 255, 255);"></td> <td style="background-color: rgb(255, 255, 255);"></td> <td style="background-color: rgb(255, 255, 255);"></td>  </tr> 
+<tr> <td style="background-color: rgb(255, 255, 255);"></td> <td style="background-color: rgb(255, 255, 255);"></td> <td style="background-color: rgb(255, 255, 255);"></td>  </tr> 
+</table>';
 
 // Vérification si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nbCases'])) {
@@ -76,34 +80,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nbCases'])) {
 		<input type="submit" value="Valider" />
 	</form>
 
+
+
 	<!-- Affichage de la grille -->
 	<?php echo $grille; ?>
 
+	<h1> Ma palette de couleurs</h1> <br />
+
 	<!-- Affichage de la palette -->
-	<div id="liste">
-		<?php
-		function conversion_chaine($couleurs)
-		{
-			// Explode la chaîne de couleurs en un tableau en utilisant la virgule comme séparateur
-			$couleursArray = explode(',', $couleurs);
+	<?php
+	function conversion_chaine($couleurs)
+	{
+		// Explode la chaîne de couleurs en un tableau en utilisant la virgule comme séparateur
+		$couleursArray = explode(',', $couleurs);
 
-			// Nettoie le tableau des éventuels espaces vides ou valeurs vides
-			$couleursArray = array_filter(array_map('trim', $couleursArray));
+		// Nettoie le tableau des éventuels espaces vides ou valeurs vides
+		$couleursArray = array_filter(array_map('trim', $couleursArray));
 
-			// Retourne le tableau des couleurs
-			return $couleursArray;
-		}
+		// Retourne le tableau des couleurs
+		return $couleursArray;
+	}
 
 
-		// Affichage du tableau de couleurs récupéré
-		valider('connecte', 'SESSION');
+	// Affichage du tableau de couleurs récupéré
+	$connecte = 0;
+	if (valider('connecte', 'SESSION') == false) {
+		$palette = conversion_chaine("#ff0000,#00ffff,#000000,#8000ff,#abcdef,#ccbbaa");
+	} else {
+		$connecte = 1;
 		$couleurs = palette_mon_compte($_SESSION['idUser']);
 		$palette = conversion_chaine($couleurs);
-		foreach ($palette as $p) {
-			echo "<div class='color' style='background-color:" . $p . ";'></div>";
+	}
+	$i = 0;
+	echo '<div id="liste">';
+	foreach ($palette as $p) {
+		if ($i == 3) {
+			echo "<br>";
+			$i = 0;
 		}
+		echo "<div class='color' style='background-color:" . $p . ";'></div>";
+		$i++;
+	}
+	if ($connecte == 0) {
+		echo "<div id=comptelien> <a href='index.php?view=login'> Personnaliser ma palette en me connectant ou en créant un compte </a> </div>";
+	}
 
-		?>
+	?>
+
 	</div>
 
 	<!-- Selectionner une couleur dans la palette et cliquer sur une case pour en changer la couleur (JQerry) -->
