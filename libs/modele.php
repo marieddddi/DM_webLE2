@@ -77,5 +77,13 @@ function smileys_mon_compte($idUser)
 	return parcoursRS(SQLSelect($sql));
 }
 
+function enregistrer_smiley($idUser, $chaine)
+{
+	$sql = "INSERT INTO smiley (id_user, chaine)
+		  VALUES ('$idUser', '$chaine')";
+	SQLInsert($sql);
+}
+
+
 
 ?>
