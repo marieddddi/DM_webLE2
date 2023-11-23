@@ -6,7 +6,6 @@ include_once "libs/maLibSQL.pdo.php";
 include_once "libs/maLibSecurisation.php";
 include_once "libs/modele.php";
 
-//faire avec post ?????
 $qs = $_GET;
 
 if ($action = valider("action")) {
@@ -91,48 +90,6 @@ if ($action = valider("action")) {
 			$qs = array("view" => "mon_compte");
 			break;
 
-
-		case "ValiderModificationCompte":
-			$qs = array("view" => "accueil");
-			$qs["msg"] = "Compte modifié avec succès";
-			$qs["msgType"] = "success";
-			$qs["msgTitle"] = "Succès";
-			$qs["msgIcon"] = "check";
-
-			$login = valider("login");
-			$passe = valider("passe");
-			$passe2 = valider("passe2");
-			$nom = valider("nom");
-			break;
-
-
-
-
-		case "Modifier le pseudo":
-			$sessionIdPers = $_SESSION["idUser"];
-			$pseudo = valider("pseudo");
-			if (veriflogin($pseudo)) {
-				$qs = array("msg" => " Ce login est déjà utilisé", "view" => "mon_compte");
-				break;
-			} else {
-				modifierPseudo($sessionIdPers, $pseudo);
-				$qs = array("msg" => " Pseudo modifié avec succès", "view" => "mon_compte");
-				break;
-			}
-
-
-
-		case "Modifier le mot de passe":
-			$sessionIdPers = $_SESSION["idUser"];
-			$passe = valider("passe");
-			$passe2 = valider("passe2");
-			if ($passe != $passe2) {
-				$qs = array("msg" => " Les mots de passe ne correspondent pas", "view" => "modif-mdp");
-				break;
-			}
-			modifierPasse($sessionIdPers, $passe);
-			$qs = array("msg" => " Mot de passe modifié avec succès", "view" => "mon_compte");
-			break;
 	}
 }
 
